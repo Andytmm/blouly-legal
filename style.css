@@ -1,0 +1,208 @@
+/* Blouly legal pages — shared styles.
+   No web fonts and no external assets on purpose: a privacy policy that phones
+   home to a third-party font CDN (which logs the reader's IP) would be a poor
+   look. Everything here is self-contained and served from this repo. */
+
+:root {
+  --bg: #ffffff;
+  --surface: #f5f5f7;
+  --text: #16161a;
+  --muted: #5c5c66;
+  --border: #dcdce2;
+  --accent: #2e7d32;
+  --accent-bg: #eef7ee;
+  --danger: #b3261e;
+  --radius: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --surface: #16161a;
+    --text: #f2f2f4;
+    --muted: #9e9ea4;
+    --border: #34343a;
+    --accent: #a8ff90;
+    --accent-bg: #14251066;
+    --danger: #f44646;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 20px 96px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+main, header, footer { max-width: 720px; margin: 0 auto; }
+
+header {
+  padding: 56px 0 8px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 40px;
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 12px;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  margin: 44px 0 12px;
+  scroll-margin-top: 24px;
+}
+
+h3 {
+  font-size: 17px;
+  margin: 28px 0 8px;
+}
+
+p, ul, ol { margin: 0 0 16px; }
+ul, ol { padding-left: 24px; }
+li { margin-bottom: 8px; }
+
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+
+strong { font-weight: 650; }
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 0.88em;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 15px;
+  margin: 0;
+}
+
+.lede {
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+/* Callout — used for the things a reader genuinely needs to notice. */
+.note {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin: 24px 0;
+}
+.note p:last-child, .note ul:last-child { margin-bottom: 0; }
+.note strong { color: var(--text); }
+
+/* Placeholders the publisher must fill in before this goes live. */
+.fill-in {
+  background: var(--accent-bg);
+  border-bottom: 2px solid var(--accent);
+  padding: 0 4px;
+  border-radius: 3px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Wide tables scroll inside their own box; the page body never scrolls sideways. */
+.table-wrap {
+  overflow-x: auto;
+  margin: 20px 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+  font-size: 15px;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  background: var(--surface);
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+tbody tr:last-child td { border-bottom: none; }
+
+/* Table of contents */
+.toc {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 24px;
+  margin-bottom: 8px;
+}
+.toc ol { margin: 0; padding-left: 22px; }
+.toc li { margin-bottom: 5px; }
+
+/* Index page cards */
+.doc-list { list-style: none; padding: 0; margin: 32px 0 0; }
+.doc-list li { margin-bottom: 14px; }
+.doc-list a {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  text-decoration: none;
+  color: var(--text);
+}
+.doc-list a:hover { border-color: var(--accent); }
+.doc-list .title { font-size: 19px; font-weight: 650; color: var(--accent); }
+.doc-list .desc { color: var(--muted); font-size: 15px; margin-top: 4px; }
+
+footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 15px;
+}
+footer a { color: var(--muted); }
+
+@media (max-width: 600px) {
+  body { font-size: 16px; padding: 0 16px 72px; }
+  header { padding-top: 36px; }
+  h1 { font-size: 27px; }
+  h2 { font-size: 20px; }
+  .lede { font-size: 17px; }
+}

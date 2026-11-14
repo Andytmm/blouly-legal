@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Subprocessors — Blouly</title>
+<meta name="description" content="The companies that process Blouly data on our behalf, what each one receives, and where.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">Blouly</p>
+  <h1>Subprocessors</h1>
+  <p class="meta">Last updated 21 August 2026 · <a href="index.html">All legal documents</a></p>
+</header>
+
+<main>
+
+<p class="lede">These are the companies that process personal data on our behalf to make Blouly
+work. Each is bound by a contract requiring it to protect your data to a standard equivalent to the
+one in our <a href="privacy.html">Privacy Policy</a>, to act only on our instructions, and to keep it
+confidential. It is a short list on purpose.</p>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>Provider</th>
+      <th>What it does for us</th>
+      <th>What it receives</th>
+      <th>Where</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Supabase</strong><br><span class="meta">Supabase Inc.</span></td>
+      <td>Hosts our database, our account system and our server functions. This is where Blouly
+      lives.</td>
+      <td>Your email address and sign-in identity; your display name if you set one; your topic names;
+      your card text and read/saved status; standard server request logs including IP address.</td>
+      <td>United States — AWS <code>us-west-2</code> (Oregon)</td>
+    </tr>
+    <tr>
+      <td><strong>Anthropic</strong><br><span class="meta">Anthropic PBC</span></td>
+      <td>Generates the text of every card, using the Claude model
+      <code>claude-sonnet-4-6</code>.</td>
+      <td><strong>Only your topic names</strong>, plus up to 40 short summaries of cards you have
+      already read on that topic (or up to 50 topic names when suggesting a new one). No email, no
+      name, no account identifier, no device identifier.<br><br>
+      Under our agreement, Anthropic <strong>does not train its models</strong> on this content and
+      <strong>deletes it within 30 days</strong>. See <a href="privacy.html#ai">Privacy Policy §5</a>
+      for the exception.</td>
+      <td>United States</td>
+    </tr>
+    <tr>
+      <td><strong>Apple</strong><br><span class="meta">Apple Inc.</span></td>
+      <td>Distributes the app, provides Sign in with Apple, and processes all subscription payments.</td>
+      <td>Whatever Apple already holds as your platform provider. If you use Sign in with Apple, Apple
+      passes us a token and either your email address or a private relay address. Payment details go
+      to Apple and never to us.</td>
+      <td>Global</td>
+    </tr>
+    <tr>
+      <td><strong>RevenueCat</strong><br><span class="meta">RevenueCat, Inc.</span></td>
+      <td>Manages subscriptions. It checks with Apple that a subscription is genuine and still
+      running, and tells our server, so that your subscription works on every phone you sign in on
+      rather than only the one you bought it on.</td>
+      <td>Your Blouly account identifier — the same random identifier our own database uses, not your
+      email or your name — together with the App Store purchase record for your subscription, and
+      basic app and device details such as the app version and your country. <strong>It never
+      receives your topics or your cards.</strong></td>
+      <td>United States</td>
+    </tr>
+    <tr>
+      <td><strong>Google</strong><br><span class="meta">Google LLC</span></td>
+      <td>Provides Sign in with Google — <strong>only if you choose that button</strong>. If you sign
+      in another way, Google is not involved at all.</td>
+      <td>Your Google account email address and name, passed to us at sign-in.</td>
+      <td>Global</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2>What is not on this list</h2>
+
+<p>There is no analytics provider, no crash-reporting provider, no advertising network, no attribution
+or install-tracking service, and no customer-data platform — because Blouly does not use any.</p>
+
+<p>The app contains exactly <strong>one</strong> third-party code library: RevenueCat's, listed
+above, which exists to make subscriptions work. Everything else is built on Apple's own frameworks.</p>
+
+<h2>Data that never reaches any of them</h2>
+
+<p>Your blocked-app list, how many times a day you open those apps, your grace timers and your daily
+goal are stored only on your device. No provider on this page receives them, and neither do we. See
+<a href="privacy.html#on-device">the Privacy Policy</a>.</p>
+
+<h2>Changes</h2>
+
+<p>If we add or replace a subprocessor we will update this page and change the date at the top. If the
+change is significant — a new company receiving your content, or a move to a different region — we
+will say so in the app or by email.</p>
+
+<p>Questions about anything here: privacy@blouly.com.</p>
+
+</main>
+
+<footer>
+  <p><a href="index.html">Legal documents</a> · <a href="privacy.html">Privacy Policy</a> ·
+  <a href="terms.html">Terms of Use</a></p>
+</footer>
+
+</body>
+</html>

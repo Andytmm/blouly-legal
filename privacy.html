@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Blouly</title>
+<meta name="description" content="What Blouly collects, what stays on your device, who processes it, and how to delete it.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">Blouly</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated 21 August 2026 · <a href="index.html">All legal documents</a></p>
+</header>
+
+<main>
+
+<p class="lede">Blouly is a small app made by one person. It has no advertising, no analytics,
+and no tracking of any kind. This policy explains the data it does handle — what stays on your phone,
+what is stored in the cloud, and the one thing that gets sent to an AI provider to write your cards.</p>
+
+<div class="note">
+  <p><strong>The short version.</strong> We store your email address, the topic names you type, and
+  the cards generated for you. To write a card, the topic name you wrote is sent to Anthropic's API.
+  Nothing that identifies you is sent with it. We do not sell or share your data, we run no
+  advertising or analytics, and you can delete your account and everything in it from inside the
+  app at any time.</p>
+</div>
+
+<div class="toc">
+  <ol>
+    <li><a href="#who-we-are">Who we are</a></li>
+    <li><a href="#what-we-collect">What we collect and why</a></li>
+    <li><a href="#on-device">What never leaves your device</a></li>
+    <li><a href="#what-we-dont">What we do not collect</a></li>
+    <li><a href="#ai">How your topics are used to write cards</a></li>
+    <li><a href="#legal-bases">Legal bases for using your data</a></li>
+    <li><a href="#who-processes">Who else processes your data</a></li>
+    <li><a href="#transfers">Where your data is stored</a></li>
+    <li><a href="#retention">How long we keep it</a></li>
+    <li><a href="#rights">Your rights, and how to use them</a></li>
+    <li><a href="#children">Children</a></li>
+    <li><a href="#security">Security</a></li>
+    <li><a href="#changes">Changes to this policy</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</div>
+
+<h2 id="who-we-are">1. Who we are</h2>
+
+<p>Blouly is provided by Andrei Safronov, an individual
+established in the United States ("we", "us"). For data protection purposes we
+are the <strong>controller</strong> of the personal data described in this policy.</p>
+
+<p>You can reach us at privacy@blouly.com. This policy covers the
+Blouly iOS app and the backend service it talks to. It does not cover the other apps you use
+Blouly alongside — those have their own policies.</p>
+
+<h2 id="what-we-collect">2. What we collect and why</h2>
+
+<h3>Account data</h3>
+
+<p>You need an account to use the parts of Blouly that generate cards, because the cards are
+stored against your account so they follow you to a new phone.</p>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Data</th><th>How it reaches us</th><th>Why</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Email address</td>
+      <td>From Sign in with Apple, Sign in with Google, or a one-time code we email you</td>
+      <td>To identify your account, sign you in, and contact you about the service</td>
+    </tr>
+    <tr>
+      <td>Display name (optional)</td>
+      <td>Provided by Apple or Google at first sign-in, or typed by you</td>
+      <td>To show your name in the account screen. You can leave it blank</td>
+    </tr>
+    <tr>
+      <td>Sign-in provider identifier</td>
+      <td>From Apple or Google when you use those buttons</td>
+      <td>To match you to the same account each time you sign in</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>If you use <strong>Sign in with Apple</strong> and choose "Hide My Email", Apple gives us a private
+relay address instead of your real one. We never receive your real address, and the app will show
+your email as hidden. If you choose to hide it entirely, we hold no email address for you at all.</p>
+
+<h3>Content you create</h3>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Data</th><th>What it is</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Topic names</td>
+      <td><strong>Free text you type</strong> — whatever subject you want cards about. This is the
+      one field where you decide what the content is, so please read
+      <a href="#ai">section 5</a> before typing anything sensitive</td>
+    </tr>
+    <tr>
+      <td>Card text</td>
+      <td>The summary and full text of every card generated for you, plus which topic it belongs to</td>
+    </tr>
+    <tr>
+      <td>Card status</td>
+      <td>Whether you have read a card and whether you saved it, with timestamps</td>
+    </tr>
+    <tr>
+      <td>Topic settings</td>
+      <td>Each topic's colour, its order in your list, and whether it is switched on</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3>Subscription data</h3>
+
+<p>If you subscribe, Apple takes the payment and we never see your card details, your billing address
+or your invoices — Apple does not make any of that available to apps, which is why the app links you
+to your iPhone's own subscription settings to manage or cancel.</p>
+
+<p>What we do hold is a record that your account is subscribed: which plan, when it expires, whether
+it is set to renew, and whether you are in the free trial. We keep it so that our server can check
+you are entitled before it writes you a card, and so that your subscription works on any phone you
+sign in on. It is written by <strong>RevenueCat</strong>, which verifies the purchase with Apple on
+our behalf — see <a href="#who-processes">section 7</a>. RevenueCat receives your Blouly account
+identifier and your App Store purchase record. It never receives your topics or your cards.</p>
+
+<h3>Technical data</h3>
+
+<p>When the app asks our server for a card, it sends your device's <strong>time zone</strong> (for
+example <code>Europe/Berlin</code>). We use it for one thing: working out when your day rolls over,
+so the daily card allowance resets at midnight where you are rather than midnight UTC. It is not
+stored against your account and is not used to locate you.</p>
+
+<p>Like any internet service, our hosting provider records standard server request logs, which
+include IP addresses, as part of operating and securing the service. We do not use those logs to
+build a profile of you.</p>
+
+<p>Separately, when something goes wrong on our server we record the <strong>failure itself</strong>:
+which part of the service failed, a technical error message, and — where the request had signed you
+in — your account identifier, so we can tell whether a fault affected one person or everyone. These
+records are deleted after <strong>30 days</strong>, and they are removed immediately if you delete
+your account. <strong>They never contain your topics or your cards.</strong> That is a deliberate
+rule and not a side effect: what you type is the one thing in this app we would least want copied
+into an operations log.</p>
+
+<p>We also keep a simple count of how much work our AI provider has done for us: one line per card or
+suggestion written, recording <em>when</em> and <em>which of the two</em>, linked to your account
+while the account exists. We use it for one thing — knowing what the service costs to run, and being
+warned if that jumps unexpectedly. It records no topic, no card text and no device information. If
+you delete your account, <strong>the link to you is erased</strong> and what remains is an anonymous
+tally that says only that a card was written at a particular time.</p>
+
+<h2 id="on-device">3. What never leaves your device</h2>
+
+<p>Some of what Blouly knows about you is deliberately kept on your phone and is never
+transmitted to us or anyone else. We built it this way on purpose, because this is the most sensitive
+data the app touches.</p>
+
+<ul>
+  <li><strong>Your blocked-app list</strong> — which apps you have chosen to be interrupted on, and
+  whether each is switched on.</li>
+  <li><strong>Your interruption history</strong> — how many times today you have opened each of those
+  apps. This is behavioural data about your habits, and it stays on your phone.</li>
+  <li><strong>Grace timers</strong> — the short windows after you tap "Open app" during which
+  Blouly leaves you alone.</li>
+  <li><strong>Your daily goal</strong> — your target, today's count, and today's date.</li>
+  <li><strong>Your sign-in tokens</strong> — held in the iOS Keychain and marked so that they cannot
+  be restored onto a different device from an iCloud backup.</li>
+</ul>
+
+<p>Because this data is only on your device, we cannot retrieve it, and it is destroyed when you
+delete the app.</p>
+
+<h2 id="what-we-dont">4. What we do not collect</h2>
+
+<p>Stated plainly, because it is unusual enough to be worth saying:</p>
+
+<ul>
+  <li><strong>No analytics and no crash reporting.</strong> There is no analytics SDK, no crash
+  reporting SDK, and no product-usage telemetry in the app.</li>
+  <li><strong>No advertising and no tracking.</strong> We do not collect an advertising identifier
+  (IDFA), we do not track you across other companies' apps or websites, and the app never shows the
+  App Tracking Transparency prompt because it has nothing to ask for.</li>
+  <li><strong>One third-party SDK, and only one.</strong> The app contains RevenueCat's library,
+  which exists solely to make subscriptions work across your devices — see
+  <a href="#who-processes">section 7</a>. Everything else is built on Apple's own frameworks. There
+  is no analytics, crash-reporting, advertising or attribution SDK of any kind.</li>
+  <li><strong>No location, contacts, photos, microphone, camera, health or fitness data.</strong>
+  The app requests none of these permissions.</li>
+  <li><strong>No selling or sharing.</strong> We do not sell your personal information, and we do not
+  share it for cross-context behavioural advertising.</li>
+</ul>
+
+<div class="note">
+  <p><strong>One thing worth disclosing.</strong> So that the apps-block feature can offer to
+  interrupt the apps you actually have, Blouly is able to check whether ten named apps are
+  installed on your phone: Instagram, Facebook, TikTok, YouTube, X (Twitter), Reddit, Snapchat,
+  Pinterest, LinkedIn and Twitch. That check happens entirely on your device, the result is never
+  sent to us, and we cannot see which apps you have.</p>
+</div>
+
+<h2 id="ai">5. How your topics are used to write cards</h2>
+
+<p>Blouly's cards are written by an AI model — Claude, made by Anthropic. This is the only place
+your content leaves our own systems, so here is precisely what happens.</p>
+
+<p>When you swipe for a new card, our server sends Anthropic's API:</p>
+
+<ul>
+  <li>the <strong>name of the topic</strong> you typed, and</li>
+  <li>up to <strong>40 short summaries</strong> of cards you have already seen on that topic, so the
+  model does not repeat itself.</li>
+</ul>
+
+<p>When the app suggests a new topic to you, it sends up to <strong>50 of your topic names</strong>
+so the suggestion fits your interests.</p>
+
+<p><strong>That is the entire payload.</strong> Your email address, your name, your account
+identifier, and any device identifier are <em>not</em> sent to Anthropic — they never form part of
+the request. Your device never contacts Anthropic directly; only our server does, using our own
+credentials.</p>
+
+<p>Under our commercial agreement with Anthropic:</p>
+
+<ul>
+  <li>Anthropic <strong>does not train its models</strong> on the content we send through the API.</li>
+  <li>Anthropic <strong>automatically deletes</strong> API inputs and outputs within
+  <strong>30 days</strong> of receiving or generating them.</li>
+  <li>The exception is content flagged under Anthropic's usage policies, which it may retain for up
+  to 2 years, with associated safety classification scores kept for up to 7 years.</li>
+</ul>
+
+<div class="note">
+  <p><strong>Please think before you type a topic.</strong> A topic name is free text, and it is the
+  one piece of your content that leaves our systems. "Roman history" and "how sourdough works" are
+  exactly what the app is for. Something like a medical diagnosis, a legal matter, or another
+  person's private business is best kept out of it — not because we would misuse it, but because it
+  would be sent to a third party for processing, and because it would be stored until you delete it.</p>
+  <p>Cards are generated by an AI model and <strong>can be wrong</strong>. They are general interest
+  reading, not professional advice. See the <a href="terms.html#ai-content">Terms of Use</a>.</p>
+</div>
+
+<h2 id="legal-bases">6. Legal bases for using your data</h2>
+
+<p>If you are in the UK, the EU or the EEA, the UK GDPR and EU GDPR require us to name a lawful basis
+for each use of your personal data.</p>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>What we do</th><th>Lawful basis</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Create and maintain your account; store your topics and cards; sync them between your
+      devices</td>
+      <td><strong>Performance of a contract</strong> — this is the service you signed up for
+      (Art. 6(1)(b))</td>
+    </tr>
+    <tr>
+      <td>Send your topic names to Anthropic to generate cards</td>
+      <td><strong>Performance of a contract</strong> — generating cards is the app's core function
+      (Art. 6(1)(b))</td>
+    </tr>
+    <tr>
+      <td>Enforce daily limits, prevent abuse, and keep the service secure</td>
+      <td><strong>Legitimate interests</strong> — protecting the service and controlling costs so it
+      can keep running (Art. 6(1)(f))</td>
+    </tr>
+    <tr>
+      <td>Take payment for a subscription and honour it</td>
+      <td><strong>Performance of a contract</strong> (Art. 6(1)(b)). Payment itself is handled by
+      Apple, not by us</td>
+    </tr>
+    <tr>
+      <td>Meet our legal and tax obligations</td>
+      <td><strong>Legal obligation</strong> (Art. 6(1)(c))</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="who-processes">7. Who else processes your data</h2>
+
+<p>We use a small number of providers to run the service. Each one is bound by a contract that
+requires it to protect your data to a standard equivalent to the one described in this policy, to
+process it only on our instructions, and to keep it confidential.</p>
+
+<p>The full list, with what each one receives, is on the
+<a href="subprocessors.html">subprocessors page</a>. In summary: <strong>Supabase</strong> hosts our
+database, accounts and server functions; <strong>Anthropic</strong> generates the card text;
+<strong>Apple</strong> handles Sign in with Apple and all subscription payments;
+<strong>RevenueCat</strong> verifies those subscriptions with Apple and tells our server you are
+entitled; and <strong>Google</strong> is involved only if you choose to sign in with a Google
+account.</p>
+
+<p>Beyond these, we share your personal data only where we are legally required to — for example in
+response to a valid legal request — or where it is necessary to establish, exercise or defend legal
+claims. If Blouly is ever transferred to someone else, we will tell you before your data moves,
+and this policy will continue to apply until you are given a new one.</p>
+
+<h2 id="transfers">8. Where your data is stored</h2>
+
+<p>Your account, topics and cards are stored in the <strong>United States</strong> — specifically in
+our Supabase project hosted in the AWS <code>us-west-2</code> region (Oregon). Anthropic processes
+card-generation requests in the United States, and RevenueCat processes subscription records there
+too. Apple and Google operate globally.</p>
+
+<p>If you are in the UK, EU or EEA, this means your personal data is transferred outside your
+country. Those transfers are made under the European Commission's Standard Contractual Clauses (and
+the UK Addendum where applicable), which our providers incorporate into their data processing terms,
+together with the technical measures described in <a href="#security">section 12</a>.</p>
+
+<h2 id="retention">9. How long we keep it</h2>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Data</th><th>Kept for</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Your account and profile</td>
+      <td>Until you delete your account</td>
+    </tr>
+    <tr>
+      <td>A topic, and every card belonging to it</td>
+      <td>Until you delete that topic, or delete your account — whichever comes first. Deleting a
+      topic removes it and its cards from the app straight away, and we erase them from our servers
+      within 30 days</td>
+    </tr>
+    <tr>
+      <td>On-device data (blocked apps, interruption counts, daily goal)</td>
+      <td>Until you remove it in the app or delete the app. Signing out clears the topics and cards
+      mirrored on your device</td>
+    </tr>
+    <tr>
+      <td>Content sent to Anthropic</td>
+      <td>Deleted by Anthropic within 30 days (see <a href="#ai">section 5</a> for the exception)</td>
+    </tr>
+    <tr>
+      <td>Your subscription record</td>
+      <td>Until you delete your account, which removes our copy along with everything else. Apple and
+      RevenueCat keep their own purchase records under their own policies — we cannot delete those,
+      and neither can you</td>
+    </tr>
+    <tr>
+      <td>Server request logs held by our hosting provider</td>
+      <td>The provider's own operational retention period</td>
+    </tr>
+    <tr>
+      <td>Our own records of server errors (see <a href="#what-we-collect">section 2</a>)</td>
+      <td>30 days, then deleted automatically. Removed at once if you delete your account. Never
+      contains your topics or cards</td>
+    </tr>
+    <tr>
+      <td>Our count of cards and suggestions written, for cost monitoring</td>
+      <td>Kept as a running total. Deleting your account <strong>erases the link to you</strong>,
+      leaving an anonymous tally with no topic, card text or device information in it</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>We do not otherwise put an expiry on your topics and cards, because the point of a saved card is
+that it is still there when you come back. If you want them gone sooner, delete the topic or the
+account.</p>
+
+<p><strong>Why deleting a topic takes 30 days to complete on our side.</strong> The topic and its
+cards leave the app immediately — you will not see them again, and we do not use them for anything
+after that point. We hold the rows for up to 30 days for two reasons: so that a topic deleted by
+mistake can be recovered if you ask us, and so that cards already written that day still count
+towards your daily limit. Without the second one, deleting a topic would hand back allowance you
+had already used. After 30 days the rows are deleted permanently by an automatic job.</p>
+
+<h3>Deleting your account</h3>
+
+<p>You can delete your account from inside the app: <strong>Menu → Account → Delete account</strong>.
+It is immediate and it cannot be undone. Deleting the account removes the account itself, your
+profile, every topic and every card, in a single operation — there is no "deactivated" state and
+nothing is kept back. That includes anything still inside the 30-day window described above: the
+account deletion takes it all at once, and does not wait. You do not need to email us and we will
+not ask you why.</p>
+
+<p><strong>Deleting your account does not cancel your subscription.</strong> Apple owns the
+subscription, not us, and no app is able to cancel one on your behalf. If you are subscribed, cancel
+it first in <strong>Settings → your name → Subscriptions</strong> on your iPhone — otherwise Apple
+will keep billing you after your Blouly data is gone.</p>
+
+<h2 id="rights">10. Your rights, and how to use them</h2>
+
+<p>Depending on where you live you have some or all of the following rights over your personal data:
+to <strong>access</strong> it, to have it <strong>corrected</strong>, to have it
+<strong>deleted</strong>, to receive a <strong>portable copy</strong>, to
+<strong>restrict</strong> or <strong>object to</strong> how we use it, and to
+<strong>withdraw consent</strong> where we relied on it.</p>
+
+<p>The quickest route for most of these is the app itself: edit or delete any topic, and delete your
+account and all its data, without contacting anyone. For anything else — a copy of your data, a
+correction, or a question about this policy — email privacy@blouly.com and
+we will respond within one month.</p>
+
+<p><strong>If you are in California.</strong> You have the right to know what personal information we
+collect and how we use it (this policy), the right to delete it, the right to correct it, and the
+right not to be discriminated against for exercising those rights. We do not sell your personal
+information and we do not share it for cross-context behavioural advertising, so there is nothing to
+opt out of. We do not offer financial incentives in exchange for personal information.</p>
+
+<p><strong>If you are in the UK, EU or EEA</strong> and you think we have handled your data badly, we
+would like the chance to fix it first — but you also have the right to complain to your national data
+protection authority.</p>
+
+<h2 id="children">11. Children</h2>
+
+<p>Blouly is not directed at children and is not intended for use by anyone under 13, or under
+the higher minimum age set by your country where one applies (16 in some EU member states). We do not
+knowingly collect personal data from children. If you believe a child has given us personal data,
+email us and we will delete it.</p>
+
+<h2 id="security">12. Security</h2>
+
+<p>No system is perfectly secure, but here is what we actually do:</p>
+
+<ul>
+  <li>All traffic between the app and our servers is encrypted in transit with HTTPS.</li>
+  <li>Every request to our backend carries your own signed session token. There is no shared
+  password or shared key built into the app — if there were, extracting it from the app would give
+  someone access to everyone's data.</li>
+  <li>The database enforces row-level security: each row is tied to a user, and a request
+  authenticated as one user cannot read or modify another user's rows.</li>
+  <li>Our AI provider credentials live only on the server, never in the app.</li>
+  <li>Your sign-in tokens are stored in the iOS Keychain and marked so they cannot travel to another
+  device via an iCloud backup.</li>
+</ul>
+
+<h2 id="changes">13. Changes to this policy</h2>
+
+<p>If we change how we handle your data, we will update this page and change the date at the top. If
+the change is significant, we will tell you in the app or by email before it takes effect.</p>
+
+<h2 id="contact">14. Contact</h2>
+
+<p>Andrei Safronov<br>
+800 Parkview Dr, Apt 306, Hallandale Beach, FL 33009<br>
+privacy@blouly.com</p>
+
+</main>
+
+<footer>
+  <p><a href="index.html">Legal documents</a> · <a href="terms.html">Terms of Use</a> ·
+  <a href="subprocessors.html">Subprocessors</a></p>
+</footer>
+
+</body>
+</html>
